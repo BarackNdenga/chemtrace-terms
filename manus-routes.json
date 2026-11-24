@@ -1,0 +1,7 @@
+{
+  "routes": [
+    { "path": "/", "title": "Conditions d’utilisation — ChemTrace" },
+    { "path": "/index.html", "title": "Conditions d’utilisation — ChemTrace" },
+    { "path": "/politique-confidentialite.html", "title": "Privacy Policy — ChemTrace" }
+  ]
+}
