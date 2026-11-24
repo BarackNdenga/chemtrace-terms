@@ -1,23 +1,21 @@
 # ChemTrace — Conditions d’utilisation
 
-Static HTML pages for the ChemTrace Android app (`com.chemtrace.app`): French Terms of Use (`index.html`) and the existing ChemTrace Privacy Policy reproduced in English (`politique-confidentialite.html`). The privacy source was found in `BarackNdenga/PRIVACY_POLICY.md` and is dated October 8, 2026. No server, analytics code, build step, or external runtime dependency is required; the typefaces fall back to system fonts if Google Fonts cannot be reached.
+Site statique HTML pour l’application Android ChemTrace (`com.chemtrace.app`) : Conditions d’utilisation en français (`index.html`) et reproduction en anglais de la politique de confidentialité existante (`politique-confidentialite.html`). Le document source a été retrouvé dans `BarackNdenga/PRIVACY_POLICY.md` et porte la date du 8 octobre 2026. Aucun framework, serveur, gestionnaire de paquets ou build n’est nécessaire.
 
-## Activate GitHub Pages yourself
+## Déployer sur Vercel
 
-After the repository is available in your GitHub account:
+1. Connectez-vous à [Vercel](https://vercel.com/) avec votre compte.
+2. Choisissez **Add New → Project**, puis importez le dépôt GitHub `BarackNdenga/chemtrace-terms`. Autorisez Vercel à lire ce dépôt privé si on vous le demande.
+3. Dans **Configure Project**, gardez le répertoire racine (`.`) et choisissez **Other** comme Framework Preset si Vercel ne le détecte pas automatiquement.
+4. Laissez les commandes de build et le répertoire de sortie vides : il s’agit d’un site statique sans compilation. Cliquez sur **Deploy**.
+5. Après le déploiement, Vercel indiquera l’adresse publique HTTPS du projet, normalement sous la forme `https://<nom-du-projet>.vercel.app`. Vérifiez la page d’accueil et le lien vers la politique de confidentialité avant d’utiliser l’URL dans Google Play Console.
 
-1. Open the repository's **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select branch **main** and folder **/(root)**, then select **Save**.
-4. Wait for the Pages deployment to finish. GitHub will display the actual public site address in the Pages settings; it may take several minutes to appear.
+Ce dépôt est préparé pour Vercel, mais le compte Vercel n’a pas été connecté et aucun déploiement n’est confirmé à ce stade. Les déploiements de production ultérieurs peuvent être déclenchés par les mises à jour de la branche `main` selon les réglages Vercel du projet.
 
-The expected project-site address, if the repository is named `chemtrace-terms` under `BarackNdenga`, is `https://barackndenga.github.io/chemtrace-terms/`. This is only an expected address, not a confirmation that Pages is enabled or that the page is online.
+## Fichiers
 
-If this repository is private, GitHub Pages availability depends on the GitHub plan and organization settings. On GitHub Free, public Pages require a public repository; changing visibility makes all committed files public. Review the repository contents and choose visibility in GitHub yourself before enabling Pages. The repository creator does not enable Pages in this project.
-
-## Files
-
-- `index.html` — French Conditions d’utilisation with a linked table of contents.
-- `politique-confidentialite.html` — existing English privacy policy text, in a separate linked page.
-- `styles.css` — responsive layout and visual styles.
-- `manus-routes.json` — page-route manifest for development preview.
+- `index.html` — Conditions d’utilisation en français, avec table des matières navigable.
+- `politique-confidentialite.html` — texte existant de la politique, reproduit en anglais.
+- `styles.css` — styles responsives; polices système uniquement, sans requêtes externes.
+- `vercel.json` — configuration légère pour des URL propres.
+- `manus-routes.json` — manifeste de routes utilisé par l’aperçu de développement.
